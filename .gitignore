@@ -2,5 +2,5 @@
 build
 node_modules
 .DS_Store
-*.css
+# *.css   Ive commented this line out to include my css code changes in github
 .cache
