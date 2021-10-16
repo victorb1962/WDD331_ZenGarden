@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Merriweather&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=IM+Fell+English+SC&family=Merriweather&display=swap");
 /* -------------------------------- 
 
 xBackground 
@@ -11,11 +13,11 @@ body {
 
 /* -------------------------------- 
 
-xPatterns
+xPatterns and Assets
 
 -------------------------------- */
 .cd-box {
-  /* this is the container of various design elements - i.e. the 2 logo of the branding section */
+  /* this is the container of various design elements - i.e. the 2 logo of the assets section */
   border: 1px solid #000000;
   border-radius: 3px;
   background: #ffffff;
@@ -28,13 +30,8 @@ xPatterns
 xNavigation 
 
 -------------------------------- */
-/* -------------------------------- 
-
-xNavigation 
-
--------------------------------- */
 header {
-  background-color: #f3d403;
+  background-color: #2a75b3;
 }
 
 .cd-logo {
@@ -50,15 +47,15 @@ header {
 
 .cd-main-nav {
   /* main navigation background color - full screen on small devices */
-  background: #f3d403;
+  background: #2a75b3;
 }
 .cd-main-nav li a {
   color: #ffffff;
-  border-color: #fcde13;
+  border-color: #2f83c8;
 }
 @media only screen and (min-width: 1024px) {
   .cd-main-nav li a {
-    color: #fef7c4;
+    color: #bad7ef;
   }
   .cd-main-nav li a.selected {
     color: #ffffff;
@@ -89,10 +86,10 @@ header {
 
 .cd-download {
   /* download button top-right visible on big devices */
-  background-color: #fce22d;
+  background-color: #3e8fd2;
 }
 .no-touch .cd-download:hover {
-  background-color: #fde546;
+  background-color: #539bd7;
 }
 .cd-download span {
   /* tooltip */
@@ -110,7 +107,7 @@ xPage title
 
 -------------------------------- */
 main > h1 {
-  color: #f3d403;
+  color: #2a75b3;
 }
 @media only screen and (min-width: 1600px) {
   main > h1 {
@@ -124,14 +121,9 @@ main > h1 {
 xTypography 
 
 -------------------------------- */
-/* -------------------------------- 
-
-xTypography 
-
--------------------------------- */
 h1, h2 {
   font-family: "Open Sans", sans-serif;
-  color: #f3d403;
+  color: #2a75b3;
 }
 
 h1 {
@@ -171,7 +163,7 @@ section > h2::before {
 p {
   font-size: 1.4rem;
   line-height: 1.4;
-  color: #fdec78;
+  color: #7cb3e0;
 }
 p a {
   color: #cc4224;
@@ -198,7 +190,7 @@ xButtons
   color: #ffffff;
   padding: 0.6em 2.2em;
   cursor: pointer;
-  background: #cc4224;
+  background: #f3d403;
 }
 .btn:focus {
   outline: none;
@@ -213,10 +205,10 @@ xButtons
   background: #82d485;
 }
 .btn.btn-alert {
-  background: #2a75b3;
+  background: #cc4224;
 }
 .no-touch .btn.btn-alert:hover {
-  background: #2f83c8;
+  background: #da4e2f;
 }
 .btn.btn-outline {
   color: #cc4224;
@@ -235,7 +227,7 @@ xButtons
 
 .cd-buttons .cd-box:nth-of-type(2) span {
   /* CSS class name color */
-  color: #cc4224;
+  color: #2a75b3;
 }
 
 /* -------------------------------- 
@@ -390,7 +382,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Roboto", serif;
+  font-family: "Acme", sans-serif;
 }
 
 a {
@@ -402,7 +394,7 @@ img {
 }
 
 input, textarea, select {
-  font-family: "Roboto", serif;
+  font-family: "Acme", sans-serif;
   font-size: 1.6rem;
 }
 
@@ -848,22 +840,22 @@ section:nth-of-type(10) h2::before {
   background: #b63b20;
 }
 .cd-colors li:nth-of-type(2) .cd-color-swatch {
-  background: #f3d403;
-}
-.cd-colors li:nth-of-type(2) .cd-color-swatch::before {
-  background: #fcde13;
-}
-.cd-colors li:nth-of-type(2) .cd-color-swatch::after {
-  background: #dabe03;
-}
-.cd-colors li:nth-of-type(3) .cd-color-swatch {
   background: #2a75b3;
 }
-.cd-colors li:nth-of-type(3) .cd-color-swatch::before {
+.cd-colors li:nth-of-type(2) .cd-color-swatch::before {
   background: #2f83c8;
 }
-.cd-colors li:nth-of-type(3) .cd-color-swatch::after {
+.cd-colors li:nth-of-type(2) .cd-color-swatch::after {
   background: #25689e;
+}
+.cd-colors li:nth-of-type(3) .cd-color-swatch {
+  background: #f3d403;
+}
+.cd-colors li:nth-of-type(3) .cd-color-swatch::before {
+  background: #fcde13;
+}
+.cd-colors li:nth-of-type(3) .cd-color-swatch::after {
+  background: #dabe03;
 }
 .cd-colors li:nth-of-type(4) .cd-color-swatch {
   background: #000000;
