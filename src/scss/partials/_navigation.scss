@@ -81,11 +81,11 @@ ul {
         li a,
         &:visited,
         &:active {
-            color: #f3d403;
+            color: $color-3;
         }
         li a:hover {
             background-color: #6fce72;
-            color: #000;
+            color: $color-4;
         }
     }
 }
@@ -98,20 +98,20 @@ ul {
             color: #808080;
         }
         li a:hover {
-            background-color: #2a75b3;
-            color: #fff;
+            background-color: $color-2;
+            color: $color-5;
         }
     }
 }
 
-:not(.cd-primary-nav, .cd-secondary-nav) ul {
+:not() ul {
     li a,
     &:visited,
     &:active {
-        color: #2a75b3;
+        color: $color-2;
     }
     li a:hover {
-        background-color: #cc4224;
-        color: #fff;
+        background-color: $color-1;
+        color: $color-5;
     }
 }
