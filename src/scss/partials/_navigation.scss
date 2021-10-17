@@ -78,12 +78,12 @@ ul {
 
 .cd-primary-nav {
     ul {
-        li a,
+        li,
         &:visited,
         &:active {
             color: $color-3;
         }
-        li a:hover {
+        li:hover {
             background-color: #6fce72;
             color: $color-4;
         }
@@ -92,12 +92,12 @@ ul {
 
 .cd-secondary-nav {
     ul {
-        li a,
+        li,
         &:visited,
         &:active {
             color: #808080;
         }
-        li a:hover {
+        li:hover {
             background-color: $color-2;
             color: $color-5;
         }
@@ -105,12 +105,12 @@ ul {
 }
 
 :not() ul {
-    li a,
+    li,
     &:visited,
     &:active {
         color: $color-2;
     }
-    li a:hover {
+    li:hover {
         background-color: $color-1;
         color: $color-5;
     }
