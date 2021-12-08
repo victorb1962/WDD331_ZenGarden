@@ -1,0 +1,67 @@
+//@import 'bourbon'; // http://bourbon.io/
+@import './partials/layout'; // responsive grid and media queries
+@import './partials/colors'; // color palette - these colors will be the color swatches of the Colors section // (VGB) import colors from partial scss 
+@import './partials/assets';
+@import './partials/grid';
+@import './partials/typography'; // fonts
+@import './partials/buttons';
+@import './partials/basic-style';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=IM+Fell+English+SC&family=Merriweather&display=swap');
+$primary-font: 'Acme',
+sans-serif;
+$secondary-font: 'Open Sans',
+sans-serif;
+
+/* -------------------------------- 
+
+xBackground 
+
+-------------------------------- */
+
+body {
+    /* this is the page background */
+    background-color: $color-5;
+}
+
+
+/* --------------------------------
+
+xGrid-Layout
+
+---------------------------------*/
+
+
+/* -------------------------------- 
+
+xPatterns and Assets
+
+-------------------------------- */
+
+// (VGB) import assets style from partial scss
+
+/* -------------------------------- 
+
+xNavigation 
+
+-------------------------------- */
+
+.archives {
+    @import './partials/navigation'; // (VGB) import navigation style from partial scss
+}
+
+
+/* -------------------------------- 
+
+xPage title 
+
+-------------------------------- */
+
+main>h1 {
+    color: $color-2;
+    @include MQ(L) {
+        /* title goes into the header on big devices */
+        color: $color-5;
+    }
+}
