@@ -269,7 +269,6 @@
     grid-column-end: 4;
     grid-row-start: 6;
     grid-row-end: 13;
-    padding-bottom: 1rem;
   }
 
   .benefits {
@@ -277,7 +276,6 @@
     grid-column-end: 6;
     grid-row-start: 8;
     grid-row-end: 13;
-    padding-bottom: 1rem;
   }
 
   .requirements {
