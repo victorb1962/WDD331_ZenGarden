@@ -9,10 +9,11 @@ h2 {
 }
 
 h1 {
-    font-size: 2.4rem;
-    font-weight: 300;
+    font-size: 2.5rem;
+    font-weight: bold;
     line-height: 1.2;
     margin: 0 0 .4em;
+    text-transform: uppercase;
     @include MQ(S) {
         font-size: 3.2rem;
     }
@@ -31,15 +32,10 @@ h2 {
     }
 }
 
-section>h2::before {
-    /* number before each section title */
-    color: darken($color-4, 15%);
-}
-
 p {
     font-size: 1.4rem;
     line-height: 1.4;
-    color: lighten($color-2, 25%);
+    color: darken($color-2, 10%);
     a {
         color: $color-1;
         text-decoration: underline;

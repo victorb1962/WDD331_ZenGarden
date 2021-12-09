@@ -9,10 +9,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=IM+Fell+English+SC&family=Merriweather&display=swap');
-$primary-font: 'Acme',
-sans-serif;
-$secondary-font: 'Open Sans',
-sans-serif;
 
 /* -------------------------------- 
 
@@ -22,7 +18,30 @@ xBackground
 
 body {
     /* this is the page background */
-    background-color: $color-5;
+    background-image: radial-gradient(ellipse farthest-corner, transparent 0%, transparent 35%, #fff 30%, #fff 40%, transparent 90%), radial-gradient(ellipse farthest-corner at 0px 0px, transparent 0%, transparent 20%, #fff 15%, #fff 20%, transparent 50%), radial-gradient(ellipse farthest-corner at 8px 8px, transparent 0%, transparent 20%, #fff 15%, #fff 20%, transparent 50%), radial-gradient(ellipse farthest-corner at 0px 8px, transparent 0%, transparent 20%, #fff 15%, #fff 20%, transparent 40%), radial-gradient(ellipse farthest-corner at 8px 0px, transparent 0%, transparent 20%, #fff 15%, #fff 20%, transparent 50%), linear-gradient(40deg, #bd2d10 0, #f4502f 30%, #ff6e51 50%, #f4502f 70%, #bd2d10 100%);
+    background-size: 8px 8px, 8px 8px, 8px 8px, 8px 8px, 8px 8px, 100% 100%;
+}
+
+
+/* -------------------------------- 
+
+xHeader
+
+-------------------------------- */
+
+header {
+    background-color: $color-3;
+    position: absolute;
+    border-top: solid 10px $color-2;
+    border-bottom: solid 10px $color-2;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 3.5rem;
+}
+
+h2 {
+    border-top: solid 5px $color-2;
+    border-bottom: solid 5px $color-2;
 }
 
 
@@ -59,16 +78,20 @@ xPage title
 
 -------------------------------- */
 
-main>h1 {
-    color: $color-2;
-    @include MQ(L) {
-        /* title goes into the header on big devices */
-        color: $color-5;
-    }
+.intro {
+    margin: 0;
 }
+
+
+/* -------------------------------- 
+
+xBody
+
+-------------------------------- */
 
 div {
     border: solid 5px black;
+    border-radius: 5%;
 }
 
 .main-supporting,
@@ -77,11 +100,151 @@ div {
     border: none;
 }
 
-.extra1,
+h2,
+.summary,
+.preamble,
+.explaination,
+.participation,
+.benefits,
+.requirements,
+.design-selection,
+.design-archives,
+.zen-resources {
+    background-color: $color-5;
+}
+
 .extra2,
 .extra3,
 .extra4,
-.extra5,
 .extra6 {
     border: none;
 }
+
+.design-selection,
+.design-archives,
+.zen-resources {
+    padding: 1rem;
+}
+
+.main-supporting {
+    margin-top: 2rem;
+}
+
+.extra1 {
+    width: 50px;
+    height: 50px;
+    border: solid 3px $color-4;
+    border-radius: 50%;
+    margin-top: 5px;
+    background-color: $color-5;
+}
+
+.extra2 {
+    background: $color-1;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    text-align: center;
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100px;
+        width: 100px;
+        background: $color-1;
+    }
+    &:before {
+        transform: rotate(30deg);
+    }
+    &:after {
+        transform: rotate(60deg);
+    }
+    &:hover {
+        animation: pulse 500ms;
+    }
+}
+
+.extra3 {
+    background: $color-2;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    text-align: center;
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100px;
+        width: 100px;
+        background: $color-2;
+    }
+    &:before {
+        transform: rotate(30deg);
+    }
+    &:after {
+        transform: rotate(60deg);
+    }
+    &:hover {
+        animation: pulse 500ms;
+    }
+}
+
+.extra4 {
+    background: $color-3;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    text-align: center;
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100px;
+        width: 100px;
+        background: $color-3;
+    }
+    &:before {
+        transform: rotate(30deg);
+    }
+    &:after {
+        transform: rotate(60deg);
+    }
+    &:hover {
+        animation: pulse 500ms;
+    }
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(2);
+    }
+}
+
+.extra5 {
+    border: solid 3px $color-4;
+}
+
+
+/* -------------------------------- 
+
+xFooter
+
+-------------------------------- */
+
+footer {
+    width: 100%;
+    text-align: right;
+    background-color: $color-2;
+    padding: 2rem;
+}
+
+@media (min-width: 40em) {}
