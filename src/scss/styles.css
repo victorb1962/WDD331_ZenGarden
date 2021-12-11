@@ -124,7 +124,7 @@
     grid-column-end: 2;
     grid-row-start: 5;
     grid-row-end: 6;
-    margin-left: 7rem;
+    margin-left: 3.5rem;
   }
 
   .extra3 {
@@ -132,7 +132,7 @@
     grid-column-end: 3;
     grid-row-start: 5;
     grid-row-end: 6;
-    margin-left: 7rem;
+    margin-left: 3.5rem;
   }
 
   .extra4 {
@@ -1349,7 +1349,7 @@ xBody
 -------------------------------- */
 div {
   border: solid 5px black;
-  border-radius: 5%;
+  border-radius: 10%;
 }
 
 .main-supporting,
@@ -1368,7 +1368,7 @@ h2,
 .design-selection,
 .design-archives,
 .zen-resources {
-  background-color: #ffffff;
+  background-color: #e6e6e6;
 }
 
 .extra2,
@@ -1389,12 +1389,14 @@ h2,
 }
 
 .extra1 {
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 60px;
   border: solid 3px #000000;
-  border-radius: 50%;
   margin-top: 5px;
   background-color: #ffffff;
+}
+.extra1::before {
+  content: "New Issue " " 10 Cents";
 }
 
 .extra2 {
@@ -1403,9 +1405,10 @@ h2,
   height: 100px;
   position: relative;
   text-align: center;
+  z-index: 100;
 }
 .extra2:before, .extra2:after {
-  content: "";
+  content: "POW";
   position: absolute;
   top: 0;
   left: 0;
@@ -1420,7 +1423,8 @@ h2,
   transform: rotate(60deg);
 }
 .extra2:hover {
-  animation: pulse 500ms;
+  animation: pulse 100ms ease-out;
+  animation-fill-mode: forwards;
 }
 
 .extra3 {
@@ -1429,9 +1433,10 @@ h2,
   height: 100px;
   position: relative;
   text-align: center;
+  z-index: 100;
 }
 .extra3:before, .extra3:after {
-  content: "";
+  content: "BOOM";
   position: absolute;
   top: 0;
   left: 0;
@@ -1446,7 +1451,8 @@ h2,
   transform: rotate(60deg);
 }
 .extra3:hover {
-  animation: pulse 500ms;
+  animation: pulse 100ms ease-out;
+  animation-fill-mode: forwards;
 }
 
 .extra4 {
@@ -1455,9 +1461,10 @@ h2,
   height: 100px;
   position: relative;
   text-align: center;
+  z-index: 100;
 }
 .extra4:before, .extra4:after {
-  content: "";
+  content: "BANG";
   position: absolute;
   top: 0;
   left: 0;
@@ -1472,7 +1479,8 @@ h2,
   transform: rotate(60deg);
 }
 .extra4:hover {
-  animation: pulse 500ms;
+  animation: pulse 100ms ease-out;
+  animation-fill-mode: forwards;
 }
 
 @keyframes pulse {
@@ -1489,14 +1497,81 @@ h2,
 
 /* -------------------------------- 
 
+xSidebar
+
+-------------------------------- */
+ul {
+  list-style: none;
+}
+ul > li {
+  padding: 0.2rem;
+  margin-left: -1rem;
+}
+ul > li:hover {
+  border-radius: 10%;
+  animation: hulk-out 0.5s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hulk-out {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg) scale(1.5);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg) scale(1.5);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg) scale(1.5);
+    background-color: #6fce72;
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg) scale(1.5);
+    background-color: #6fce72;
+  }
+}
+a {
+  color: #2a75b3;
+}
+a:active {
+  color: #cc4224;
+}
+a:visited {
+  color: #cc4224;
+}
+
+/* -------------------------------- 
+
 xFooter
 
 -------------------------------- */
 footer {
   width: 100%;
   text-align: right;
-  background-color: #2a75b3;
+  background-color: #ffffff;
   padding: 2rem;
+  border-top: solid 5px #2a75b3;
+  border-bottom: solid 5px #2a75b3;
 }
 
 /*# sourceMappingURL=styles.css.map */
