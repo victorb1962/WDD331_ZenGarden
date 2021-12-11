@@ -325,4 +325,32 @@ footer {
     border-bottom: solid 5px $color-2;
 }
 
-@media (min-width: 40em) {}
+@media (min-width: 100em) {
+    .extra2 {
+        width: 200px;
+        height: 200px;
+        &:before,
+        &:after {
+            height: 200px;
+            width: 200px;
+        }
+    }
+    .extra3 {
+        width: 200px;
+        height: 200px;
+        &:before,
+        &:after {
+            height: 200px;
+            width: 200px;
+        }
+    }
+    .extra4 {
+        width: 200px;
+        height: 200px;
+        &:before,
+        &:after {
+            height: 200px;
+            width: 200px;
+        }
+    }
+}

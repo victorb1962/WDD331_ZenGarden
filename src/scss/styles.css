@@ -1574,4 +1574,33 @@ footer {
   border-bottom: solid 5px #2a75b3;
 }
 
+@media (min-width: 100em) {
+  .extra2 {
+    width: 200px;
+    height: 200px;
+  }
+  .extra2:before, .extra2:after {
+    height: 200px;
+    width: 200px;
+  }
+
+  .extra3 {
+    width: 200px;
+    height: 200px;
+  }
+  .extra3:before, .extra3:after {
+    height: 200px;
+    width: 200px;
+  }
+
+  .extra4 {
+    width: 200px;
+    height: 200px;
+  }
+  .extra4:before, .extra4:after {
+    height: 200px;
+    width: 200px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
