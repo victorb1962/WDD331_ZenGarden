@@ -129,6 +129,7 @@ h3 {
 .extra2,
 .extra3,
 .extra4,
+.extra5,
 .extra6 {
     border: none;
 }
@@ -257,6 +258,21 @@ h3 {
     z-index: 100;
 }
 
+.extra5 {
+    background: transparent url(https://www.boxallfamily.org/byui/asset01.svg) no-repeat bottom right;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    text-align: center;
+    z-index: 100;
+    transform-origin: 55% 50%;
+    -moz-transform-origin: 55% 50%;
+    animation: flip 3s infinite forwards;
+    &:hover {
+        animation: spin 0.5s infinite;
+    }
+}
+
 .extra2,
 .extra3,
 .extra4 {
@@ -272,8 +288,31 @@ h3 {
     }
 }
 
-.extra5 {
-    border: solid 3px $color-4;
+@keyframes flip {
+    0% {
+        transform: perspective(1000px) rotateY(90deg) skewY(-1deg);
+    }
+    30% {
+        transform: perspective(1000px) rotateY(-25deg) skewY(-0.8deg);
+    }
+    50% {
+        transform: perspective(1000px) rotateY(20deg) skewY(0.8deg);
+    }
+    70% {
+        transform: perspective(1000px) rotateY(-10deg) skewY(-0.8);
+    }
+    100% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 
@@ -289,6 +328,7 @@ ul {
         padding: 0.2rem;
         margin-left: -1rem;
         &:hover {
+            width: fit-content;
             border-radius: 10%;
             animation: hulk-out 0.5s ease-out;
             animation-fill-mode: forwards;
