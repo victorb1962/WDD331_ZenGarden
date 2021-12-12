@@ -144,13 +144,14 @@ h3 {
 }
 
 .extra1 {
-    width: 75px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border: solid 3px $color-4;
     margin-top: 5px;
     background-color: $color-5;
     &::before {
-        content: "New Issue " " 10 Cents";
+        content: "New Issue " " 10 \00A2";
+        font-size: 1.1rem;
     }
 }
 
@@ -357,6 +358,16 @@ footer {
     padding: 2rem;
     border-top: solid 5px $color-2;
     border-bottom: solid 5px $color-2;
+}
+
+@media (min-width: 35em) {
+    .extra1 {
+        width: 75px;
+        height: 60px;
+        &::before {
+            font-size: 1.8rem;
+        }
+    }
 }
 
 @media (min-width: 100em) {
