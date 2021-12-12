@@ -355,9 +355,14 @@ footer {
     width: 100%;
     text-align: right;
     background-color: $color-5;
-    padding: 2rem;
     border-top: solid 5px $color-2;
     border-bottom: solid 5px $color-2;
+    padding: 2rem;
+    text-align: center;
+    & a:link,
+    a:visited {
+        margin-right: 20px;
+    }
 }
 
 @media (min-width: 35em) {

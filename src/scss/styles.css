@@ -1613,9 +1613,14 @@ footer {
   width: 100%;
   text-align: right;
   background-color: #ffffff;
-  padding: 2rem;
   border-top: solid 5px #2a75b3;
   border-bottom: solid 5px #2a75b3;
+  padding: 2rem;
+  text-align: center;
+}
+footer a:link,
+footer a:visited {
+  margin-right: 20px;
 }
 
 @media (min-width: 35em) {
