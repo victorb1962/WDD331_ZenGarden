@@ -1,3 +1,5 @@
-WDD331 - Advanced CSS - ZenGarden
+WDD331 - Advanced CSS 
+- ZenGarden
 
-BYU-Idaho - Autumn 2021 - Group9 CSS project
+BYU-Idaho - Autumn 2021 
+- Group9 CSS project
