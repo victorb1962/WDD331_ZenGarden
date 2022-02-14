@@ -1,0 +1,161 @@
+@supports (display: grid) {
+  .row {
+    Display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: auto;
+  }
+
+  .cell {
+    text-align: center;
+  }
+
+  .col-1 {
+    grid-column: span 1;
+  }
+
+  .col-2 {
+    grid-column: span 2;
+  }
+
+  .col-3 {
+    grid-column: span 3;
+  }
+
+  .col-4 {
+    grid-column: span 4;
+  }
+
+  .col-5 {
+    grid-column: span 5;
+  }
+
+  .col-6 {
+    grid-column: span 6;
+  }
+
+  .col-7 {
+    grid-column: span 7;
+  }
+
+  .col-8 {
+    grid-column: span 8;
+  }
+
+  .offset-1 {
+    grid-column-start: 2;
+  }
+
+  .offset-2 {
+    grid-column-start: 3;
+  }
+
+  .offset-3 {
+    grid-column-start: 4;
+  }
+
+  .offset-4 {
+    grid-column-start: 5;
+  }
+
+  .offset-5 {
+    grid-column-start: 6;
+  }
+
+  .offset-6 {
+    grid-column-start: 7;
+  }
+
+  .offset-7 {
+    grid-column-start: 8;
+  }
+
+  .offset-8 {
+    grid-column-start: 9;
+  }
+}
+@supports not (display: grid) {
+  .row {
+    display: flex;
+  }
+
+  .cell {
+    align-content: center;
+    text-align: center;
+  }
+
+  .flex-push-right {
+    justify-content: flex-end;
+  }
+
+  .col-1 {
+    width: 12.5%;
+  }
+
+  .col-2 {
+    width: 25%;
+  }
+
+  .col-3 {
+    width: 37.5%;
+  }
+
+  .col-4 {
+    width: 50%;
+  }
+
+  .col-5 {
+    width: 62.5%;
+  }
+
+  .col-6 {
+    width: 75%;
+  }
+
+  .col-7 {
+    width: 87.5%;
+  }
+
+  .col-8 {
+    width: 100%;
+  }
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  border: 1px solid grey;
+  height: 56vw;
+  width: 40vw;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 2px 2px 4px grey;
+}
+
+.card-front {
+  padding: 0.5em;
+}
+
+.icon {
+  width: 8vw;
+  height: 8vw;
+}
+
+.number {
+  text-align: center;
+  font-size: 4vw;
+}
+.number > .icon {
+  width: 4vw;
+  height: 4vw;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+/*# sourceMappingURL=card.css.map */

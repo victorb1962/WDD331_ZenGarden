@@ -1,0 +1,49 @@
+// IMPORTS
+@import 'partials/variables';
+@import 'partials/grid';
+
+// RESET
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// CARD
+.card {
+    border: 1px solid grey;
+    height: $card-height;
+    width: $card-width;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 2px 2px 4px grey;
+}
+
+// CARD FRONT
+.card-front {
+    padding: .5em;
+}
+
+// ICON
+.icon {
+    width: $icon-size;
+    height: $icon-size;
+}
+
+// CARD NUMBER & ICON
+.number {
+    text-align: center;
+    font-size: $font-size-number;
+
+    &>.icon {
+        width: $icon-size * .5;
+        height: $icon-size *.5;
+    }
+}
+
+// ROTATE ICON
+.rotate {
+    transform: rotate(180deg);
+}
