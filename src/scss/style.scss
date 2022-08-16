@@ -259,13 +259,13 @@ h3 {
 }
 
 .extra5 {
-    background: transparent url(https://www.boxallfamily.org/byui/asset01.svg) no-repeat bottom right;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b9/Captain_America%27s_shield.svg) no-repeat bottom right;
     width: 200px;
     height: 200px;
     position: relative;
     text-align: center;
     z-index: 100;
-    animation: flip 5s infinite linear;
+    animation: flip 2s infinite linear;
     &:hover {
         animation: spin 0.5s infinite;
     }
